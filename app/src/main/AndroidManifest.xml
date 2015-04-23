@@ -36,7 +36,7 @@
     <!-- For android.media.audiofx.Visualizer -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="14" />
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="14" />
 
     <!-- We will request access to the camera, saying we require a camera
          of some sort but not one with autofocus capability. -->
@@ -1171,7 +1171,15 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".animation.CardMagic"
+            android:label="Animation/Card Magic"
+            android:hardwareAccelerated="false"
+            android:enabled="@bool/atLeastHoneycomb">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".animation.ListFlipper"
                 android:label="Animation/View Flip"
                 android:enabled="@bool/atLeastHoneycomb">
