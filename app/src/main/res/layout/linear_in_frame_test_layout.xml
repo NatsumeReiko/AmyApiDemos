@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEST" />
+
+        <EditText
+            android:id="@+id/edit_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Something Here" />
+
+
+    </LinearLayout>
+</FrameLayout>

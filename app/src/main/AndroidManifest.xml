@@ -877,6 +877,74 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".noshape.CountDownLatchActivity"
+                android:label="NO SHAPE/CountDownLatch"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".justjava.SearchGrep"
+                android:label="justjava/SearchGrep"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".viewtest.EditTestActivity"
+                android:label="View Test/EditTestActivity"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".viewtest.ListViewTestActivity"
+                android:label="View Test/ListViewTestActivity"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".viewtest.LayoutTestActivity"
+                android:label="View Test/LayoutTestActivity"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".viewtest.AllPartsTestActivity"
+                android:label="View Test/AllPartsTestActivity"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+
+            <data
+                android:host="screen"
+                android:path="/wbattle/top"
+                android:scheme="abc" />
+
+        </activity>
+        <activity android:name=".viewtest.LinearLayoutInFrameActivity"
+                android:label="View Test/LinearLayoutInFrameActivity"
+                android:enabled="@bool/atLeastIceCreamSandwich">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".app.ActionBarShareActionProviderActivity"
                 android:label="@string/action_bar_share_action_provider"
                 android:enabled="@bool/atLeastIceCreamSandwich">

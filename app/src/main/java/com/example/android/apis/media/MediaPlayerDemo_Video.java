@@ -16,8 +16,6 @@
 
 package com.example.android.apis.media;
 
-import com.example.android.apis.R;
-
 import android.app.Activity;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -30,6 +28,8 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.widget.Toast;
+
+import com.example.android.apis.R;
 
 
 public class MediaPlayerDemo_Video extends Activity implements
@@ -73,12 +73,12 @@ public class MediaPlayerDemo_Video extends Activity implements
         doCleanUp();
         try {
 
+            path = "https://ia700401.us.archive.org/19/items/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
             switch (Media) {
                 case LOCAL_VIDEO:
                     /*
                      * TODO: Set the path variable to a local media file path.
                      */
-                    path = "";
                     if (path == "") {
                         // Tell the user to provide a media file URL.
                         Toast
@@ -101,7 +101,6 @@ public class MediaPlayerDemo_Video extends Activity implements
                      * reasonably interleaved.
                      * 
                      */
-                    path = "";
                     if (path == "") {
                         // Tell the user to provide a media file URL.
                         Toast

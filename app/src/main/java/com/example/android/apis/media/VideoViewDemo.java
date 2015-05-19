@@ -16,12 +16,13 @@
 
 package com.example.android.apis.media;
 
-import com.example.android.apis.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
+
+import com.example.android.apis.R;
 
 public class VideoViewDemo extends Activity {
 
@@ -37,6 +38,7 @@ public class VideoViewDemo extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.videoview);
         mVideoView = (VideoView) findViewById(R.id.surface_view);
+        path = "https://ia700401.us.archive.org/19/items/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
 
         if (path == "") {
             // Tell the user to provide a media file URL/path.

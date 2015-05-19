@@ -728,6 +728,8 @@
     <!-- ================================= -->
     <!--  app/action bar examples strings  -->
     <!-- ================================= -->
+    <string name="voice_of_users_alarm_01">※いただきましたご意見・ご要望などは必ず確認\n　させていただき、サービスの向上のために活用\n　させていただきます。\n※本コンテンツへのご意見・ご要望に関しまし\n　て、ご回答はお約束するものではありません。\n　予めご了承ください。\n※使い方に関するご不明な点は</string>
+    <string name="voice_of_users_alarm_02">よりお問い\n　合わせください。\n※わいせつ・暴力的な内容や、その他不適切な投\n　稿はアカウント停止となります。</string>
 
     <string name="action_bar_mechanics">App/Action Bar/Action Bar Mechanics</string>
     <string name="action_bar_usage">App/Action Bar/Action Bar Usage</string>

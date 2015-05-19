@@ -73,7 +73,8 @@ public class CardMagic extends Activity {
         animation = AnimationUtils.loadAnimation(this, R.anim.card_horizontal_in_from_left_anim);
         animation01 = AnimationUtils.loadAnimation(this, R.anim.card_push_left_in);
         animation02 = AnimationUtils.loadAnimation(this, R.anim.card_push_left_out);
-        animation03 = AnimationUtils.loadAnimation(this, R.anim.card_push_right_in);
+//        animation03 = AnimationUtils.loadAnimation(this, R.anim.card_push_right_in);
+        animation03 = AnimationUtils.loadAnimation(this, R.anim.card_vote_alpha);
         animation04 = AnimationUtils.loadAnimation(this, R.anim.card_push_right_out);
         animation05 = AnimationUtils.loadAnimation(this, R.anim.card_rotation);
 

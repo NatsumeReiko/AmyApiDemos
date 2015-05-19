@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nickname_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:maxLines="2"
+            android:textColor="#FF438bc5"
+            android:text="壹貳弐肆伍陸柒捌玖拾"
+            />
+
+        <TextView
+            android:id="@+id/grade_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF838383"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:text="中学２年生"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

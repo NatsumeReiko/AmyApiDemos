@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/background_linear"
+        android:layout_width="272dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp">
+
+            <ImageButton
+                android:id="@+id/avatar_button"
+                android:src="@drawable/ngcommon_icon_star3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/suspended_image"
+                android:layout_width="58dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ngcommon_icon_star3"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/nickname_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="nikename"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:textColor="#FF10C3D5"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="@string/action_bar_add"
+                android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="#FF838383"
+                android:textSize="10dp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/star_frame"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:clipChildren="false"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/star_effect1_image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:alpha="0.0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ngcommon_icon_star3" />
+
+            <ImageView
+                android:id="@+id/star_effect2_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:alpha="0.0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ngcommon_icon_star3" />
+
+            <ImageView
+                android:id="@+id/star_effect3_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:alpha="0.0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ngcommon_icon_star3" />
+
+
+            <ImageButton
+                android:id="@+id/star_button"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ngcommon_icon_star3" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
