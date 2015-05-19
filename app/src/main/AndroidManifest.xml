@@ -1181,7 +1181,16 @@
         <!-- ************************************* -->
 
         <activity android:name=".animation.AnimationLoading"
-                android:label="Animation/Loading"
+                android:label="Animation/AnimationLoading"
+                android:hardwareAccelerated="false"
+                android:enabled="@bool/atLeastHoneycomb">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".animation.AnimationStar"
+                android:label="Animation/AnimationStar"
                 android:hardwareAccelerated="false"
                 android:enabled="@bool/atLeastHoneycomb">
             <intent-filter>
