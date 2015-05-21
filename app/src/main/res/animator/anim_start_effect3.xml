@@ -19,19 +19,19 @@
 
     <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
         android:propertyName="scaleX"
-        android:duration="400"
+        android:duration="1400"
         android:valueFrom="0.5"
         android:valueTo="1.0"
         android:valueType="floatType"
-        android:startOffset="700" />
+        android:startOffset="900" />
 
     <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
         android:propertyName="scaleY"
-        android:duration="400"
+        android:duration="1400"
         android:valueFrom="0.5"
         android:valueTo="1.0"
         android:valueType="floatType"
-        android:startOffset="700" />
+        android:startOffset="900" />
 
 
     <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
@@ -41,7 +41,7 @@
         android:valueFrom="0.0"
         android:valueTo="1.0"
         android:valueType="floatType"
-        android:startOffset="600"
+        android:startOffset="700"
         android:repeatMode="reverse" />
 </set>
 
