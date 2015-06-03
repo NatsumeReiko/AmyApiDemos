@@ -44,6 +44,7 @@ public class EditTestActivity extends Activity {
 
     private EditText editTest;
     private Button sendMsgBtn;
+    TextView gotoAllParts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +52,7 @@ public class EditTestActivity extends Activity {
         setContentView(R.layout.edittext_test_layout);
         getStartTimeOfDayByJapanTimeZone();
 
-       TextView gotoAllParts = (TextView)findViewById(R.id.gotoAllParts);
+       gotoAllParts = (TextView)findViewById(R.id.gotoAllParts);
 
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("goalstart")
@@ -66,14 +67,15 @@ public class EditTestActivity extends Activity {
 //                Html.fromHtml(
 //                        "<a href=\"http://www.google.com\">go to all parts</a> "));
 
-        setTextViewHTML(gotoAllParts,"<a href=\"http://www.google.com\">go to all parts</a> ");
+        setTextViewHTML(gotoAllParts, "※いただきましたご意見・ご要望などは必ず確認<br />　させていただき、サービスの向上のために活用<br />　させていただきます。<br />※本コンテンツへのご意見・ご要望に関しまし<br />　て、ご回答はお約束するものではありません。<br />　予めご了承ください。<br />※使い方に関するご不明な点は<a href=\"goalstart://screen/browse\">こちら</a>よりお問い<br />　合わせください。<br />※わいせつ・暴力的な内容や、その他不適切な投<br />　稿はアカウント停止となります。\n");
+
         gotoAllParts.setMovementMethod(LinkMovementMethod.getInstance());
-        gotoAllParts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext()," ",Toast.LENGTH_SHORT);
-            }
-        });
+//        gotoAllParts.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getApplicationContext()," ",Toast.LENGTH_SHORT);
+//            }
+//        });
 
         editTest = (EditText)findViewById(R.id.edit_test);
         editTest.setImeOptions(DEFAULT_KEYS_DISABLE);
@@ -129,7 +131,11 @@ public class EditTestActivity extends Activity {
         ClickableSpan clickable = new ClickableSpan() {
             public void onClick(View view) {
                 // Do something with span.getURL() to handle the link click...
-                Toast.makeText(getApplicationContext(),"ClickableSpan ",Toast.LENGTH_SHORT);
+                Toast.makeText(getApplicationContext(),"ClickableSpan ",Toast.LENGTH_SHORT).show();
+
+
+                setTextViewHTML(gotoAllParts, "※いただきましたご意見・ご要望などは必ず確認<br />　させていただき、サービスの向上のために活用<br />　させていただきます。<br />※本コンテンツへのご意見・ご要望に関しまし<br />　て、ご回答はお約束するものではありません。<br />　予めご了承ください。<br />※使い方に関するご不明な点は<a href=\"goalstart://screen/browse\">こちら</a>よりお問い<br />　合わせください。<br />※わいせつ・暴力的な内容や、その他不適切な投<br />　稿はアカウント停止となります。\n");
+
 
             }
         };
