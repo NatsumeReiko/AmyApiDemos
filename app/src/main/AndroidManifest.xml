@@ -3338,6 +3338,24 @@
         </activity>
 
         <activity
+            android:name=".text.UnicodeTest"
+            android:label="Text/UnicodeTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".text.UnicodeCommonTextTest"
+            android:label="Text/UnicodeCommonTextTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".text.Marquee"
             android:label="Text/Marquee">
             <intent-filter>

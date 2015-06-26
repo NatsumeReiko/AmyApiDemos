@@ -52,4 +52,7 @@
         <attr name="android:label" />
     </declare-styleable>
 
+    <declare-styleable name="CommonTextView">
+        <attr name="is_user_input_text" format="boolean" />
+    </declare-styleable>
 </resources>
