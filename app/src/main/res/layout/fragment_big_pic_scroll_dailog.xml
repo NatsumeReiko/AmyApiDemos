@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:adjustViewBounds="false"-->
+                <!--android:background="@drawable/ng20_5_main" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:adjustViewBounds="false"-->
+                <!--android:background="@drawable/ng20_5_main" />-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<View-->
+    <!--android:id="@+id/shadow_view"-->
+    <!--android:layout_width="308dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center_horizontal|bottom"-->
+    <!--android:background="@drawable/contest_dialog_scroll_background"-->
+    <!--/>-->
+    <!--<ImageView-->
+        <!--android:id="@+id/close_button"-->
+        <!--android:layout_width="33dp"-->
+        <!--android:layout_height="33dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/ngcommon_btn_close_b" />-->
+
+
+</RelativeLayout>

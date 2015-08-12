@@ -328,7 +328,6 @@
 
     <string name="activity_external_storage">Content/Storage/External Storage</string>
     <string name="create">Create</string>
-    <string name="delete">Delete</string>
 
     <string name="activity_styled_text">Content/Resources/<i>Styled</i> <b>Text</b></string>
     <string name="styled_text_rsrc">Initialized from a resource:</string>
@@ -1294,7 +1293,6 @@
     <string name="reply">Reply</string>
     <string name="dismiss">Dismiss</string>
 
-    <string name="share">Share</string>
 
     <!-- ============================ -->
     <!--  Accessibility examples strings  -->
@@ -1341,5 +1339,8 @@
     <string name="task_complete_template">Task %1$s %2$s</string>
     <string name="task_complete">is complete</string>
     <string name="task_not_complete">is not complete</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
   </resources>

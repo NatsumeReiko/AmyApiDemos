@@ -43,6 +43,42 @@
         <item>beta</item>
         <item>charlie</item>  
     </string-array>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string-array name="images_adventure">
+        <item>th_adventure_01</item>
+        <item>th_adventure_02</item>
+        <item>th_adventure_03</item>
+        <item>th_adventure_04</item>
+        <item>th_adventure_05</item>
+        <item>th_adventure_06</item>
+    </string-array>
+    <string-array name="images_mystery">
+        <item>th_mystery_01</item>
+        <item>th_mystery_02</item>
+        <item>th_mystery_03</item>
+        <item>th_mystery_04</item>
+        <item>th_mystery_05</item>
+        <item>th_mystery_06</item>
+    </string-array>
+    <string-array name="images_nature">
+        <item>th_nature_01</item>
+        <item>th_nature_02</item>
+        <item>th_nature_03</item>
+        <item>th_nature_04</item>
+        <item>th_nature_05</item>
+        <item>th_nature_06</item>
+    </string-array>
+    <string-array name="images_romance">
+        <item>th_romance_01</item>
+        <item>th_romance_02</item>
+        <item>th_romance_03</item>
+        <item>th_romance_04</item>
+        <item>th_romance_05</item>
+        <item>th_romance_06</item>
+    </string-array>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
     <string-array name="password_qualities">
         <item>Unspecified</item>
         <item>Something</item>
@@ -110,25 +146,717 @@
         <item>Every Saturday</item>
         <item>Every Sunday</item>
     </string-array>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string-array name="themes">
+        <item>adventure</item>
+        <item>mystery</item>
+        <item>nature</item>
+        <item>romance</item>
+    </string-array>
+    <string-array name="wordbank_adventure">
+        <item>&amp;</item>
+        <item>a</item>
+        <item>a</item>
+        <item>about</item>
+        <item>always</item>
+        <item>am</item>
+        <item>and</item>
+        <item>an</item>
+        <item>another</item>
+        <item>are</item>
+        <item>as</item>
+        <item>at</item>
+        <item>begin</item>
+        <item>between</item>
+        <item>but</item>
+        <item>by</item>
+        <item>can</item>
+        <item>d</item>
+        <item>day</item>
+        <item>delicious</item>
+        <item>es</item>
+        <item>every</item>
+        <item>everyone</item>
+        <item>everything</item>
+        <item>fantastic</item>
+        <item>fresh</item>
+        <item>from</item>
+        <item>good</item>
+        <item>have</item>
+        <item>he</item>
+        <item>hear</item>
+        <item>heart</item>
+        <item>her</item>
+        <item>here</item>
+        <item>his</item>
+        <item>how</item>
+        <item>I</item>
+        <item>I</item>
+        <item>if</item>
+        <item>in</item>
+        <item>in</item>
+        <item>ing</item>
+        <item>ing</item>
+        <item>is</item>
+        <item>is</item>
+        <item>it</item>
+        <item>lay</item>
+        <item>life</item>
+        <item>like</item>
+        <item>like</item>
+        <item>live</item>
+        <item>love</item>
+        <item>lovely</item>
+        <item>ly</item>
+        <item>make</item>
+        <item>marvel</item>
+        <item>more</item>
+        <item>must</item>
+        <item>my</item>
+        <item>need</item>
+        <item>no</item>
+        <item>no</item>
+        <item>nothing</item>
+        <item>of</item>
+        <item>of</item>
+        <item>on</item>
+        <item>only</item>
+        <item>or</item>
+        <item>our</item>
+        <item>out</item>
+        <item>pack</item>
+        <item>s</item>
+        <item>s</item>
+        <item>sleep</item>
+        <item>the</item>
+        <item>the</item>
+        <item>then</item>
+        <item>there</item>
+        <item>they</item>
+        <item>through</item>
+        <item>too</item>
+        <item>try</item>
+        <item>up</item>
+        <item>us</item>
+        <item>use</item>
+        <item>was</item>
+        <item>we</item>
+        <item>were</item>
+        <item>which</item>
+        <item>who</item>
+        <item>why</item>
+        <item>will</item>
+        <item>with</item>
+        <item>with</item>
+        <item>wonder</item>
+        <item>world</item>
+        <item>would</item>
+        <item>wrap</item>
+        <item>y</item>
+        <item>you</item>
+        <item>be</item>
+        <item>better</item>
+        <item>bring</item>
+        <item>burn</item>
+        <item>come</item>
+        <item>did</item>
+        <item>do</item>
+        <item>e</item>
+        <item>ed</item>
+        <item>er</item>
+        <item>favorite</item>
+        <item>for</item>
+        <item>give</item>
+        <item>has</item>
+        <item>him</item>
+        <item>hot</item>
+        <item>know</item>
+        <item>ly</item>
+        <item>me</item>
+        <item>more</item>
+        <item>my</item>
+        <item>perfection</item>
+        <item>poet</item>
+        <item>quiet</item>
+        <item>r</item>
+        <item>see</item>
+        <item>she</item>
+        <item>so</item>
+        <item>some</item>
+        <item>sweet</item>
+        <item>than</item>
+        <item>that</item>
+        <item>this</item>
+        <item>though</item>
+        <item>your</item>
+        <item>country</item>
+        <item>cover</item>
+        <item>cut</item>
+        <item>top</item>
+    </string-array>
+    <string-array name="wordbank_mystery">
+        <item>&amp;</item>
+        <item>a</item>
+        <item>a</item>
+        <item>about</item>
+        <item>always</item>
+        <item>am</item>
+        <item>an</item>
+        <item>and</item>
+        <item>another</item>
+        <item>are</item>
+        <item>as</item>
+        <item>at</item>
+        <item>be</item>
+        <item>begin</item>
+        <item>better</item>
+        <item>between</item>
+        <item>bring</item>
+        <item>burn</item>
+        <item>but</item>
+        <item>by</item>
+        <item>can</item>
+        <item>come</item>
+        <item>cover</item>
+        <item>cut</item>
+        <item>d</item>
+        <item>day</item>
+        <item>did</item>
+        <item>do</item>
+        <item>e</item>
+        <item>ed</item>
+        <item>elixir</item>
+        <item>er</item>
+        <item>es</item>
+        <item>every</item>
+        <item>everyone</item>
+        <item>everything</item>
+        <item>fantastic</item>
+        <item>favorite</item>
+        <item>for</item>
+        <item>from</item>
+        <item>give</item>
+        <item>good</item>
+        <item>has</item>
+        <item>have</item>
+        <item>he</item>
+        <item>hear</item>
+        <item>heart</item>
+        <item>her</item>
+        <item>here</item>
+        <item>him</item>
+        <item>his</item>
+        <item>hot</item>
+        <item>how</item>
+        <item>I</item>
+        <item>I</item>
+        <item>if</item>
+        <item>in</item>
+        <item>in</item>
+        <item>ing</item>
+        <item>ing</item>
+        <item>is</item>
+        <item>is</item>
+        <item>it</item>
+        <item>know</item>
+        <item>lay</item>
+        <item>life</item>
+        <item>like</item>
+        <item>like</item>
+        <item>live</item>
+        <item>love</item>
+        <item>lovely</item>
+        <item>ly</item>
+        <item>ly</item>
+        <item>make</item>
+        <item>marvel</item>
+        <item>me</item>
+        <item>more</item>
+        <item>more</item>
+        <item>must</item>
+        <item>my</item>
+        <item>my</item>
+        <item>need</item>
+        <item>night</item>
+        <item>no</item>
+        <item>nothing</item>
+        <item>of</item>
+        <item>of</item>
+        <item>on</item>
+        <item>only</item>
+        <item>or</item>
+        <item>our</item>
+        <item>out</item>
+        <item>perfection</item>
+        <item>poet</item>
+        <item>quiet</item>
+        <item>r</item>
+        <item>s</item>
+        <item>s</item>
+        <item>see</item>
+        <item>she</item>
+        <item>sleep</item>
+        <item>so</item>
+        <item>some</item>
+        <item>sweet</item>
+        <item>than</item>
+        <item>that</item>
+        <item>the</item>
+        <item>the</item>
+        <item>then</item>
+        <item>there</item>
+        <item>they</item>
+        <item>this</item>
+        <item>though</item>
+        <item>through</item>
+        <item>too</item>
+        <item>top</item>
+        <item>try</item>
+        <item>up</item>
+        <item>us</item>
+        <item>use</item>
+        <item>was</item>
+        <item>we</item>
+        <item>were</item>
+        <item>which</item>
+        <item>who</item>
+        <item>why</item>
+        <item>will</item>
+        <item>with</item>
+        <item>with</item>
+        <item>wonder</item>
+        <item>wood</item>
+        <item>world</item>
+        <item>would</item>
+        <item>wrap</item>
+        <item>y</item>
+        <item>you</item>
+        <item>your</item>
+    </string-array>
+    <string-array name="wordbank_nature">
+        <item>&amp;</item>
+        <item>a</item>
+        <item>a</item>
+        <item>about</item>
+        <item>air</item>
+        <item>alive</item>
+        <item>alpine</item>
+        <item>always</item>
+        <item>am</item>
+        <item>an</item>
+        <item>and</item>
+        <item>another</item>
+        <item>are</item>
+        <item>aroma</item>
+        <item>as</item>
+        <item>at</item>
+        <item>backpack</item>
+        <item>be</item>
+        <item>begin</item>
+        <item>better</item>
+        <item>between</item>
+        <item>bluebird</item>
+        <item>bring</item>
+        <item>burn</item>
+        <item>but</item>
+        <item>by</item>
+        <item>can</item>
+        <item>come</item>
+        <item>cover</item>
+        <item>crisp</item>
+        <item>cut</item>
+        <item>d</item>
+        <item>day</item>
+        <item>did</item>
+        <item>do</item>
+        <item>e</item>
+        <item>ed</item>
+        <item>er</item>
+        <item>es</item>
+        <item>every</item>
+        <item>everyone</item>
+        <item>everything</item>
+        <item>fantastic</item>
+        <item>favorite</item>
+        <item>flower</item>
+        <item>for</item>
+        <item>fresh</item>
+        <item>from</item>
+        <item>give</item>
+        <item>good</item>
+        <item>has</item>
+        <item>have</item>
+        <item>he</item>
+        <item>hear</item>
+        <item>heart</item>
+        <item>her</item>
+        <item>here</item>
+        <item>him</item>
+        <item>his</item>
+        <item>hot</item>
+        <item>how</item>
+        <item>I</item>
+        <item>I</item>
+        <item>if</item>
+        <item>in</item>
+        <item>in</item>
+        <item>ing</item>
+        <item>ing</item>
+        <item>is</item>
+        <item>is</item>
+        <item>it</item>
+        <item>know</item>
+        <item>lay</item>
+        <item>life</item>
+        <item>like</item>
+        <item>like</item>
+        <item>live</item>
+        <item>living</item>
+        <item>love</item>
+        <item>lovely</item>
+        <item>ly</item>
+        <item>ly</item>
+        <item>make</item>
+        <item>marvel</item>
+        <item>me</item>
+        <item>more</item>
+        <item>more</item>
+        <item>morning</item>
+        <item>must</item>
+        <item>my</item>
+        <item>my</item>
+        <item>need</item>
+        <item>no</item>
+        <item>no</item>
+        <item>nothing</item>
+        <item>oak</item>
+        <item>of</item>
+        <item>of</item>
+        <item>on</item>
+        <item>only</item>
+        <item>or</item>
+        <item>our</item>
+        <item>out</item>
+        <item>park</item>
+        <item>perfection</item>
+        <item>poet</item>
+        <item>quiet</item>
+        <item>r</item>
+        <item>rain</item>
+        <item>s</item>
+        <item>s</item>
+        <item>see</item>
+        <item>she</item>
+        <item>sleep</item>
+        <item>so</item>
+        <item>some</item>
+        <item>than</item>
+        <item>that</item>
+        <item>the</item>
+        <item>the</item>
+        <item>then</item>
+        <item>there</item>
+        <item>they</item>
+        <item>this</item>
+        <item>though</item>
+        <item>through</item>
+        <item>too</item>
+        <item>top</item>
+        <item>tree</item>
+        <item>try</item>
+        <item>up</item>
+        <item>us</item>
+        <item>use</item>
+        <item>was</item>
+        <item>we</item>
+        <item>were</item>
+        <item>which</item>
+        <item>who</item>
+        <item>why</item>
+        <item>will</item>
+        <item>with</item>
+        <item>with</item>
+        <item>wonder</item>
+        <item>wood</item>
+        <item>world</item>
+        <item>would</item>
+        <item>y</item>
+        <item>you</item>
+        <item>your</item>
+    </string-array>
+    <string-array name="wordbank_romance">
+        <item>&amp;</item>
+        <item>a</item>
+        <item>a</item>
+        <item>about</item>
+        <item>always</item>
+        <item>am</item>
+        <item>and</item>
+        <item>an</item>
+        <item>another</item>
+        <item>are</item>
+        <item>as</item>
+        <item>at</item>
+        <item>begin</item>
+        <item>between</item>
+        <item>but</item>
+        <item>by</item>
+        <item>can</item>
+        <item>craved</item>
+        <item>day</item>
+        <item>es</item>
+        <item>every</item>
+        <item>everyone</item>
+        <item>everything</item>
+        <item>from</item>
+        <item>good</item>
+        <item>have</item>
+        <item>he</item>
+        <item>hear</item>
+        <item>heart</item>
+        <item>her</item>
+        <item>here</item>
+        <item>his</item>
+        <item>how</item>
+        <item>I</item>
+        <item>I</item>
+        <item>if</item>
+        <item>in</item>
+        <item>in</item>
+        <item>ing</item>
+        <item>ing</item>
+        <item>is</item>
+        <item>is</item>
+        <item>it</item>
+        <item>life</item>
+        <item>like</item>
+        <item>like</item>
+        <item>live</item>
+        <item>love</item>
+        <item>lovely</item>
+        <item>ly</item>
+        <item>make</item>
+        <item>mouth</item>
+        <item>must</item>
+        <item>my</item>
+        <item>need</item>
+        <item>no</item>
+        <item>no</item>
+        <item>nothing</item>
+        <item>of</item>
+        <item>of</item>
+        <item>on</item>
+        <item>only</item>
+        <item>or</item>
+        <item>our</item>
+        <item>out</item>
+        <item>perfume</item>
+        <item>s</item>
+        <item>s</item>
+        <item>sleep</item>
+        <item>the</item>
+        <item>the</item>
+        <item>then</item>
+        <item>there</item>
+        <item>they</item>
+        <item>through</item>
+        <item>too</item>
+        <item>try</item>
+        <item>up</item>
+        <item>us</item>
+        <item>use</item>
+        <item>was</item>
+        <item>we</item>
+        <item>were</item>
+        <item>which</item>
+        <item>who</item>
+        <item>why</item>
+        <item>will</item>
+        <item>with</item>
+        <item>with</item>
+        <item>wonder</item>
+        <item>world</item>
+        <item>would</item>
+        <item>wrap</item>
+        <item>y</item>
+        <item>you</item>
+        <item>be</item>
+        <item>better</item>
+        <item>bring</item>
+        <item>burn</item>
+        <item>come</item>
+        <item>desire</item>
+        <item>did</item>
+        <item>do</item>
+        <item>e</item>
+        <item>ed</item>
+        <item>er</item>
+        <item>favorite</item>
+        <item>for</item>
+        <item>give</item>
+        <item>has</item>
+        <item>him</item>
+        <item>hot</item>
+        <item>know</item>
+        <item>ly</item>
+        <item>me</item>
+        <item>more</item>
+        <item>my</item>
+        <item>perfection</item>
+        <item>poet</item>
+        <item>quiet</item>
+        <item>r</item>
+        <item>see</item>
+        <item>she</item>
+        <item>so</item>
+        <item>some</item>
+        <item>sweet</item>
+        <item>than</item>
+        <item>that</item>
+        <item>this</item>
+        <item>though</item>
+        <item>your</item>
+    </string-array>
+    <string-array name="wordbank_suffixes">
+        <item>d</item>
+        <item>es</item>
+        <item>ing</item>
+        <item>ly</item>
+        <item>s</item>
+        <item>y</item>
+        <item>ed</item>
+        <item>r</item>
+        <item>er</item>
+        <item>e</item>
+    </string-array>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/bools.xml -->
     <eat-comment/>
     <bool name="atLeastHoneycomb">false</bool>
     <bool name="atLeastHoneycombMR2">false</bool>
     <bool name="atLeastIceCreamSandwich">false</bool>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <color name="background_beige">#FFEDD4</color>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <color name="custom_theme_color">#b0b0ff</color>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <color name="even_less_transparent">#66000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="grayish_blue">#8899A6</color>
+    <color name="green">#00A79B</color>
+    <color name="mopub_brown">#371F1F</color>
+    <color name="not_so_transparent">#44000000</color>
+    <color name="red_font">#EC5959</color>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="solid_blue">#0000ff</color>
     <color name="solid_green">#f0f0</color>
     <color name="solid_red">#f00</color>
     <color name="solid_yellow">#ffffff00</color>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <color name="white">#FFF</color>
+    <declare-styleable name="CommonTextView"><attr format="boolean" name="is_user_input_text"/></declare-styleable>
     <declare-styleable name="DraggableDot"><attr format="dimension" name="radius"/><attr format="string" name="legend"/><attr name="anr"><enum name="none" value="0"/><enum name="thumbnail" value="1"/><enum name="drop" value="2"/></attr></declare-styleable>
     <declare-styleable name="FragmentArguments"><attr name="android:label"/></declare-styleable>
     <declare-styleable name="Gallery1"><attr name="android:galleryItemBackground"/></declare-styleable>
     <declare-styleable name="LabelView"><attr format="string" name="text"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/></declare-styleable>
+    <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
     <declare-styleable name="TogglePrefAttrs"><attr name="android:preferenceLayoutChild"/></declare-styleable>
+    <dimen name="about_cannonball_logo_margin_bottom">0dp</dimen>
+    <dimen name="about_cannonball_logo_margin_top">15dp</dimen>
+    <dimen name="about_crash_checkbox_margin_end">30dp</dimen>
+    <dimen name="about_crash_checkbox_margin_start">30dp</dimen>
+    <dimen name="about_fabric_logo_height">150dp</dimen>
+    <dimen name="about_fabric_logo_width">150dp</dimen>
+    <dimen name="about_instruction_text_margin">5dp</dimen>
+    <dimen name="about_scroll_view_margin">10dp</dimen>
+    <dimen name="about_sign_out_button_padding">20dp</dimen>
+    <dimen name="about_text_size">15sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="borderless_button_text_size">20sp</dimen>
+    <dimen name="bottom_bar_height">50dp</dimen>
+    <dimen name="countdown_spinner_height">60dp</dimen>
+    <dimen name="countdown_spinner_padding">0dp</dimen>
+    <dimen name="countdown_spinner_width">60dp</dimen>
+    <dimen name="countdown_text_height">30dp</dimen>
+    <dimen name="countdown_text_padding_end">4dp</dimen>
+    <dimen name="countdown_text_padding_start">4dp</dimen>
+    <dimen name="countdown_text_padding_top">3dp</dimen>
+    <dimen name="countdown_text_size">20sp</dimen>
+    <dimen name="countdown_text_width">30dp</dimen>
+    <!-- From: file:/D:/src/apidemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="login_button_margin_bottom">20dp</dimen>
+    <dimen name="login_button_margin_end">20dp</dimen>
+    <dimen name="login_button_margin_start">20dp</dimen>
+    <dimen name="login_button_margin_top">10dp</dimen>
+    <dimen name="login_button_text_size">25sp</dimen>
+    <dimen name="mopub_ad_app_property_margin_end">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_ad_app_property_text_size">25sp</dimen>
+    <dimen name="mopub_ad_icon_image_height">40dp</dimen>
+    <dimen name="mopub_ad_icon_image_margin">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_ad_icon_image_width">40dp</dimen>
+    <dimen name="mopub_ad_main_image_margin">10dp</dimen>
+    <dimen name="mopub_ad_text_margin_bottom">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_ad_text_margin_end">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_ad_text_margin_start">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_ad_text_size">17sp</dimen>
+    <dimen name="mopub_ad_unit_container_margin">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_element_spacing">10dp</dimen>
+    <dimen name="mopub_install_button_margin_end">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_install_button_margin_start">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_install_button_margin_top">@dimen/mopub_element_spacing</dimen>
+    <dimen name="mopub_install_button_padding_bottom">8dp</dimen>
+    <dimen name="mopub_install_button_padding_end">20dp</dimen>
+    <dimen name="mopub_install_button_padding_start">20dp</dimen>
+    <dimen name="mopub_install_button_padding_top">8dp</dimen>
+    <dimen name="mopub_install_text_size">18sp</dimen>
+    <dimen name="mopub_sponsored_text_size">25sp</dimen>
+    <dimen name="poem_delete_button_height">40dp</dimen>
+    <dimen name="poem_delete_button_margin_start">22dp</dimen>
+    <dimen name="poem_delete_button_margin_top">15dp</dimen>
+    <dimen name="poem_delete_button_width">40dp</dimen>
+    <dimen name="poem_height">350dp</dimen>
+    <dimen name="poem_list_divider_height">25dp</dimen>
+    <dimen name="poem_padding">0dp</dimen>
+    <dimen name="poem_text_margin_bottom">20dp</dimen>
+    <dimen name="poem_text_padding">10dp</dimen>
+    <dimen name="poem_text_size">25sp</dimen>
+    <dimen name="poem_theme_text_margin_top">20dp</dimen>
+    <dimen name="poem_theme_text_size">25sp</dimen>
+    <dimen name="share_height">40dp</dimen>
+    <dimen name="share_height_px">800px</dimen>
+    <dimen name="share_margin_end">22dp</dimen>
+    <dimen name="share_margin_top">15dp</dimen>
+    <dimen name="share_text_margin_bottom">30px</dimen>
+    <dimen name="share_text_padding">30px</dimen>
+    <dimen name="share_text_size">30px</dimen>
+    <dimen name="share_width">40dp</dimen>
+    <dimen name="share_width_px">800px</dimen>
+    <dimen name="theme_name_font_size">30sp</dimen>
+    <dimen name="theme_name_margin_bottom">10dp</dimen>
+    <dimen name="top_bar_height">70dp</dimen>
+    <dimen name="top_bar_left_side_button_margin_start">20dp</dimen>
+    <dimen name="top_bar_right_side_button_margin_end">20dp</dimen>
+    <dimen name="top_bar_text_size">25sp</dimen>
+    <dimen name="tweet_list_margin_top">2dp</dimen>
+    <dimen name="tweet_list_progress_bar_margin_top">20dp</dimen>
+    <dimen name="weighted_height">0dp</dimen>
+    <dimen name="word_container_padding">7dp</dimen>
+    <dimen name="word_padding_horizontal">15dp</dimen>
+    <dimen name="word_padding_vertical">15dp</dimen>
+    <dimen name="word_stroke_width">2dp</dimen>
+    <dimen name="word_text_size">22sp</dimen>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <drawable name="blue">#770000ff</drawable>
     <drawable name="green">#7700ff00</drawable>
     <drawable name="red">#7f00</drawable>
@@ -136,9 +864,16 @@
     <drawable name="translucent_background">#e0000000</drawable>
     <drawable name="transparent_background">#00000000</drawable>
     <drawable name="yellow">#77ffff00</drawable>
+    <!-- From: file:/D:/src/apidemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="snack" type="id"/>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="about_activate_crashes">Activate crashes (for demo purposes)</string>
+    <string name="about_learn_more">Learn more at t.co/cannonball</string>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="accessibility_custom_off">Off</string>
@@ -250,6 +985,11 @@
     <string name="admin_receiver_status_pw_failed">pw failed</string>
     <string name="admin_receiver_status_pw_succeeded">pw succeeded</string>
     <string name="advanced_preferences">Preference/6. Advanced preferences</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="adventure">#Adventure</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="again">Again</string>
     <string name="alarm_controller">This demonstrates how to schedule and handle
         one-shot and repeating alarms.</string>
@@ -338,6 +1078,11 @@
     <string name="animation_2_text_3">a chance to be better.</string>
     <string name="animation_2_text_4">— Albert Camus</string>
     <string name="animation_3_text">Interpolators</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="app_name">Cannonball</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="app_update_received">ApiDemos has been updated!</string>
     <string name="apply">Apply</string>
     <string name="appwidget_configure_instructions">This text will be shown before the date in our example widget.</string>
@@ -422,6 +1167,16 @@
     <string name="close_search">Iconify</string>
     <string name="contacts_filter">This demonstrates an Instrumentation package that
         launches the contacts list and simulates user events to filter it.</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="content_desc_back">Back button</string>
+    <string name="content_desc_done">Done</string>
+    <string name="content_desc_history">History</string>
+    <string name="content_desc_icon">Application icon</string>
+    <string name="content_desc_poempic">Poem background</string>
+    <string name="content_desc_popular">Popular poems</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="controls_1_checkbox_1">Checkbox 1</string>
     <string name="controls_1_checkbox_2">Checkbox 2</string>
     <string name="controls_1_radiobutton_1">RadioButton 1</string>
@@ -450,7 +1205,11 @@
     <string name="default_value_edittext_preference">Default value</string>
     <string name="default_value_list_preference">beta</string>
     <string name="default_values">Preference/4. Default values</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <string name="delete">Delete</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="density_title">Density: Unknown Screen</string>
     <string name="device_capabilities_category">Device capabilities</string>
     <string name="dialog_activity_add">Add content</string>
@@ -572,6 +1331,7 @@
     <string name="header_general">General</string>
     <string name="header_lock_wipe">Lock screen / Wipe</string>
     <string name="header_quality">Password quality</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world"><b>Hello, <i>World!</i></b></string>
     <string name="hide_me">Hide Me!</string>
     <string name="hover_button">Hover Here</string>
@@ -586,6 +1346,7 @@
     <string name="hover_message_exited_at">Exited the container at (%1$f,%2$f).  The pointer may be inside the bounds of a child instead.</string>
     <string name="hover_message_initial">Try using a mouse or touch pad to hover over views within this activity.</string>
     <string name="hover_message_moved_at">Moved within the container at (%1$f,%2$f).</string>
+    <string name="html_text">API Demos</string>
     <string name="image_view_large_at_most">Large image scaled to at most 50x50</string>
     <string name="image_view_large_at_most_padded">Large image scaled to at most 70x70 with padding</string>
     <string name="image_view_large_exactly_padded">Large image scaled to exactly 70x70 with padding</string>
@@ -600,6 +1361,17 @@
     <string name="incoming_message_view_message_text">This is the text of the posted notification.</string>
     <string name="initial_text">Initial text.</string>
     <string name="inline_preferences">In-line preferences</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="instructions">
+        Cannonball is the fun way to create and share stories and poems on your phone.
+        Start with a beautiful image from the gallery, then choose words about #adventure,
+        #romance, #nature or #mystery to complete the story and share it with friends.
+        Browse top stories created by other users for inspiration.\n\n
+        Cannonball was built with Fabric.
+    </string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="intent_activity_flags">Example of the use of various intent activity flags.</string>
     <string name="intents">Example of launching various Intents.</string>
     <string name="item_1">Item 1</string>
@@ -723,9 +1495,25 @@
     <string name="monkey_ok">I admit defeat</string>
     <string name="monkey_reset_password">You can\'t reset my password, you are a monkey!</string>
     <string name="monkey_wipe_data">You can\'t wipe my data, you are a monkey!</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="mopub_ad_icon">Ad Icon</string>
+    <string name="mopub_ad_image">Ad Image</string>
+    <string name="mopub_app_property" translateable="false">Clash of Clans</string>
+    <string name="mopub_install">Install</string>
+    <string name="mopub_placeholder">This is the text of an Ad that will be loaded by MoPub</string>
+    <string name="mopub_sponsored">#Sponsored</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="msg_launcher_shortcuts">This activity creates shortcuts for the launcher (home screen), and receives intents from those shortcuts.  To try it, return to the launcher and long-press to create a shortcut.</string>
     <string name="msg_search">This activity shows a few different ways to invoke search, and inserts context-specific data for use by the search activity.</string>
     <string name="msg_search_results">This activity accepts query strings via the ACTION_SEARCH intent.  In a full implementation, you would use the query string to select results from your data source, and present a list of those results to the user.</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="mystery">#Mystery</string>
+    <string name="nature">#Nature</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="new_fragment">New fragment</string>
     <string name="new_text">New Text</string>
     <string name="no_saves_state">This text field does not save its state:</string>
@@ -767,6 +1555,13 @@
     <string name="pick_person">Pick a Person</string>
     <string name="pick_phone">Pick a Phone</string>
     <string name="pick_result">Pick a result to send, or BACK to cancel.</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="poem_history_title">Your Poems</string>
+    <string name="poem_placeholder">This will be a poem generate by the user, how awesome is that, don\' get excited, this is just a placeholder</string>
+    <string name="popular_poems_title">Popular Poems</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="popup_menu_add">Add</string>
     <string name="popup_menu_button">Make a Popup!</string>
     <string name="popup_menu_edit">Edit</string>
@@ -849,6 +1644,11 @@
     <string name="resources_width_and_height_description">The layouts below use -wNNNdp and
         -hNNNdp to select between different versions based on the size of the screen.</string>
     <string name="restart">Restart</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="romance">#Romance</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="sample_device_admin">Sample Device Admin</string>
     <string name="sample_device_admin_description">Sample code for writing
         a DeviceAdmin class.  This implementation provides a UI (in ApiDemos)
@@ -900,6 +1700,11 @@
     <string name="search_sect_invocation">Ways to invoke search</string>
     <string name="search_sect_options">Optional search parameters</string>
     <string name="searchview_hint">Find something</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="seconds_to_go">60</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="secure_view_action_dialog_dismiss">Oops...</string>
     <string name="secure_view_action_dialog_title">Oh no!</string>
     <string name="secure_view_button">Don\'t click!  It\'ll cost you!</string>
@@ -957,7 +1762,12 @@
     <string name="set_password_api_dialog">Set screen lock password to</string>
     <string name="set_password_user">Set password (user)</string>
     <string name="set_wallpaper">Set Wallpaper</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <string name="share">Share</string>
+    <string name="share_poem_tweet_text">Look at the poem I wrote using #cannonballapp</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="short_bottom_notification">Short bottom.</string>
     <string name="short_center_notification">Short center.</string>
     <string name="short_left_notification">Short left.</string>
@@ -968,6 +1778,15 @@
     <string name="shortcut_name">Sample</string>
     <string name="shortcuts">App/Launcher Shortcuts</string>
     <string name="show">Show</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="shuffle">Shuffle</string>
+    <string name="sign_in_with_phone">Sign in with Phone</string>
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="sign_out">Sign out</string>
+    <string name="skip">skip</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="sms_content_label">Message Body</string>
     <string name="sms_enable_receiver">Enable SMS broadcast receiver</string>
     <string name="sms_recipient_label">Recipient #</string>
@@ -1164,6 +1983,12 @@
     <string name="textColorTertiary">textColorTertiary</string>
     <string name="text_switcher_1_next_text">Next</string>
     <string name="text_to_speech">App/Text-To-Speech</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="theme_placeholder">#adventure</string>
+    <string name="title_activity_about">About</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="title_advanced_toggle_preference">Haunted preference</string>
     <string name="title_checkbox_preference">Checkbox preference</string>
     <string name="title_child_preference">Child checkbox preference</string>
@@ -1179,6 +2004,19 @@
     <string name="title_wifi">WiFi</string>
     <string name="title_wifi_settings">WiFi settings</string>
     <string name="title_yesno_preference">Yes or no preference</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="toast_poem_created">Poem written successfully!</string>
+    <string name="toast_poem_delete_error">An error occurred when deleting the poem.</string>
+    <string name="toast_poem_deleted">Poem deleted</string>
+    <string name="toast_poem_error">An error occurred when creating the poem, please try again.</string>
+    <string name="toast_retrieve_tweets_error">Failed to retrieve tweets</string>
+    <string name="toast_share_error">An error occurred when trying to share your poem.</string>
+    <string name="toast_twitter_digits_fail">It was not possible to Sign up with your Phone, try again later</string>
+    <string name="toast_twitter_signin_fail">It was not possible to Sign in with Twitter, try again later</string>
+    <string name="toast_wordless_poem">There\'s no poem without words on it…</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="toggle_dogs">Toggle dogs</string>
     <string name="toggle_home_as_up">DISPLAY_HOME_AS_UP</string>
     <string name="toggle_navigation">Navigation</string>
@@ -1202,6 +2040,8 @@
     <string name="visibility_1_view_2">View B</string>
     <string name="visibility_1_view_3">View C</string>
     <string name="visibility_1_vis">Vis</string>
+    <string name="voice_of_users_alarm_01">※いただきましたご意見・ご要望などは必ず確認\n　させていただき、サービスの向上のために活用\n　させていただきます。\n※本コンテンツへのご意見・ご要望に関しまし\n　て、ご回答はお約束するものではありません。\n　予めご了承ください。\n※使い方に関するご不明な点は</string>
+    <string name="voice_of_users_alarm_02">よりお問い\n　合わせください。\n※わいせつ・暴力的な内容や、その他不適切な投\n　稿はアカウント停止となります。</string>
     <string name="voice_recognition">App/Voice Recognition</string>
     <string name="voice_recognition_prompt">This activity demonstrates the voice recognition APIs.</string>
     <string name="voice_recognition_results">Results:</string>
@@ -1218,6 +2058,9 @@
         including external storage! Are you really absolutely sure?</string>
     <string name="wipe_warning_second_no">Oops, run away!</string>
     <string name="wipe_warning_second_ok">BOOM!</string>
+    <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <string name="you_need_twitter">You need to activate your Twitter account to see popular poems.</string>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="BadTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">

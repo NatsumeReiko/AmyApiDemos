@@ -18,6 +18,7 @@ package com.example.android.apis.viewtest;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,6 +56,8 @@ public class ListViewTestActivity extends Activity {
             @Override
             public void onClick(View v) {
 //                changeDate();
+                startActivity(new Intent(ListViewTestActivity.this, Twitter4jActivity.class));
+
             }
         });
 
