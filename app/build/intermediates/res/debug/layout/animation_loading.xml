@@ -19,11 +19,100 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     >
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Run"
-        android:id="@+id/startButton"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run"
+            android:id="@+id/startButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run1"
+            android:id="@+id/star1tButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:id="@+id/stop_animation"
+            />
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/star_frame"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:clipChildren="false"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/star_button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/ngcommon_icon_star3" />
+
+
+        <ImageView
+            android:id="@+id/star_effect1_image"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:alpha="0.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ngcommon_star_effect1" />
+
+        <ImageView
+            android:id="@+id/star_effect2_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:alpha="0.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ngcommon_star_effect2" />
+
+        <ImageView
+            android:id="@+id/star_effect3_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:alpha="0.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ngcommon_star_effect3" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageButton
+            android:layout_margin="10dp"
+            android:id="@+id/nointerpolation"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/ngcommon_icon_star3" />
+        <ImageButton
+            android:layout_margin="10dp"
+            android:id="@+id/interpolation"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/ngcommon_icon_star3" />
+
+        </LinearLayout>
 </LinearLayout>
 <!-- From: file:/D:/src/apidemo/app/src/main/res/layout/animation_loading.xml -->

@@ -920,6 +920,7 @@
     <string name="action_bar_sort_size">By size</string>
     <string name="action_bar_tabs">App/Action Bar/Action Bar Tabs</string>
     <string name="action_bar_usage">App/Action Bar/Action Bar Usage</string>
+    <string name="action_settings">Settings</string>
     <string name="activate_encryption">Activate encryption</string>
     <string name="activity_alarm_controller">App/Alarm/Alarm Controller</string>
     <string name="activity_alarm_service">App/Alarm/Alarm Service</string>
@@ -1374,6 +1375,7 @@
     <eat-comment/>
     <string name="intent_activity_flags">Example of the use of various intent activity flags.</string>
     <string name="intents">Example of launching various Intents.</string>
+    <string name="intro">Capture a picture to crop!</string>
     <string name="item_1">Item 1</string>
     <string name="item_2">Item 2</string>
     <string name="item_3">Item 3</string>
@@ -1555,6 +1557,7 @@
     <string name="pick_person">Pick a Person</string>
     <string name="pick_phone">Pick a Phone</string>
     <string name="pick_result">Pick a result to send, or BACK to cancel.</string>
+    <string name="picture">Picture</string>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <string name="poem_history_title">Your Poems</string>
@@ -1989,6 +1992,7 @@
     <string name="title_activity_about">About</string>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_highligt_key_word">HighligtKeyWordActivity</string>
     <string name="title_advanced_toggle_preference">Haunted preference</string>
     <string name="title_checkbox_preference">Checkbox preference</string>
     <string name="title_child_preference">Child checkbox preference</string>

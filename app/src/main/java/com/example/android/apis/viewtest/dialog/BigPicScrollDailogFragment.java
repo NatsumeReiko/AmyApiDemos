@@ -68,17 +68,14 @@ public class BigPicScrollDailogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final Dialog dialog = new Dialog(getActivity());
 
-        // タイトル非表示
         dialog.getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-//        // フルスクリーン
 //        dialog.getWindow().setFlags(
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
 //        );
 
-        // レイアウト
         dialog.setContentView(R.layout.fragment_big_pic_scroll_dailog);
 
         return dialog;

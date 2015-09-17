@@ -1342,5 +1342,8 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="intro">Capture a picture to crop!</string>
+    <string name="picture">Picture</string>
+    <string name="title_activity_highligt_key_word">HighligtKeyWordActivity</string>
+    <string name="action_settings">Settings</string>
   </resources>
