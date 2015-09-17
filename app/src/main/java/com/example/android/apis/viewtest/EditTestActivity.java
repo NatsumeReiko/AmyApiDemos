@@ -17,6 +17,7 @@
 package com.example.android.apis.viewtest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
@@ -50,6 +51,13 @@ public class EditTestActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edittext_test_layout);
+
+        Intent intent = new Intent(Intent.ACTION_DEFAULT, Uri.parse("gsland://home"));
+        intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+        startActivity(intent);
+        finish();
+
+
         getStartTimeOfDayByJapanTimeZone();
 
        gotoAllParts = (TextView)findViewById(R.id.gotoAllParts);

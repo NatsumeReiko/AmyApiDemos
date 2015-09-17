@@ -1,4 +1,19 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'io.fabric'
+
+buildscript {
+    repositories {
+        jcenter()
+//        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.+'
+        // The Fabric Gradle plugin uses an open ended version to react
+        // quickly to Android tooling updates
+//        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
 
 android {
     compileSdkVersion 21
@@ -6,7 +21,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.android.apis"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 14
 
         testApplicationId "com.example.android.apis.tests"
@@ -20,8 +35,16 @@ android {
         }
     }
 }
+
+//repositories {
+//    jcenter()
+//    maven { url 'https://maven.fabric.io/public' }
+//}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'org.twitter4j:twitter4j-core:4.0.0'
     compile 'com.android.support:support-v4:20.0.+'
     compile 'com.android.support:recyclerview-v7:+'
+
 }

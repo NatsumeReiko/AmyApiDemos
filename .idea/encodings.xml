@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/fonts/srgb_20141216" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/fonts/srgm_20141216" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/text/CommonTextView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/viewtest/AndroidBug5497Workaround.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/viewtest/PopupAnimation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/animator/vertical_slide_in.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/animator/vertical_slide_out.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ngcommon_star_effect1.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ngcommon_star_effect2.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ngcommon_star_effect3.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/talk_room_header_part.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/view_notification_popup.xml" charset="UTF-8" />
   </component>
 </project>
-

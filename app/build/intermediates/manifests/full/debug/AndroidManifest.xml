@@ -25,10 +25,12 @@
     package="com.example.android.apis" >
 
     <uses-sdk
-        android:minSdkVersion="4"
+        android:minSdkVersion="14"
         android:targetSdkVersion="14" />
 
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -38,6 +40,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <!-- For android.media.audiofx.Visualizer -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -57,6 +60,9 @@
         android:name="com.example.android.apis.app.LocalSampleInstrumentation"
         android:label="Local Sample"
         android:targetPackage="com.example.android.apis" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.example.android.apis.ApiDemosApplication"
@@ -215,8 +221,7 @@
         </activity>
         <activity
             android:name="com.example.android.apis.app.SendResult"
-            android:theme="@style/ThemeDialogWhenLarge" >
-        </activity>
+            android:theme="@style/ThemeDialogWhenLarge" />
         <activity
             android:name="com.example.android.apis.app.Forwarding"
             android:label="@string/activity_forwarding" >
@@ -226,8 +231,7 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.apis.app.ForwardTarget" >
-        </activity>
+        <activity android:name="com.example.android.apis.app.ForwardTarget" />
         <activity
             android:name="com.example.android.apis.app.RedirectEnter"
             android:label="@string/activity_redirect" >
@@ -237,10 +241,8 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.apis.app.RedirectMain" >
-        </activity>
-        <activity android:name="com.example.android.apis.app.RedirectGetter" >
-        </activity>
+        <activity android:name="com.example.android.apis.app.RedirectMain" />
+        <activity android:name="com.example.android.apis.app.RedirectGetter" />
 
         <!--
              This sample doesn't work with the new action bar, so use
@@ -739,16 +741,14 @@
         </activity>
         <activity
             android:name="com.example.android.apis.app.IncomingMessageView"
-            android:label="App/Notification/IncomingMessageView" >
-        </activity>
+            android:label="App/Notification/IncomingMessageView" />
         <activity
             android:name="com.example.android.apis.app.IncomingMessageInterstitial"
             android:excludeFromRecents="true"
             android:label="You have messages"
             android:launchMode="singleTask"
             android:taskAffinity=""
-            android:theme="@style/ThemeHoloDialog" >
-        </activity>
+            android:theme="@style/ThemeHoloDialog" />
 
         <!--
              This is used to display a notification selected by the user
@@ -761,8 +761,7 @@
             android:excludeFromRecents="true"
             android:noHistory="true"
             android:taskAffinity=""
-            android:theme="@style/Theme.Transparent" >
-        </activity>
+            android:theme="@style/Theme.Transparent" />
         <activity
             android:name="com.example.android.apis.app.StatusBarNotifications"
             android:label="App/Notification/Status Bar"
@@ -1029,6 +1028,243 @@
             android:name="com.example.android.apis.app.ActionBarSettingsActionProviderActivity"
             android:enabled="@bool/atLeastIceCreamSandwich"
             android:label="@string/action_bar_settings_action_provider" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.noshape.CountDownLatchActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="NO SHAPE/CountDownLatch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.justjava.SearchGrep"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="justjava/SearchGrep" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.EditTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/EditTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.LaunchOtherActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/LaunchOtherActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.HowtoEditPictureActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/HowtoEditPictureActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.ShootAndCropActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/ShootAndCropActiv" >
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.TrimPictureByCustomizeImageViewActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/ShootAndCropActiv" >
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.DialogTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/DialogTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.Twitter4jActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/TwitterActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback_main"
+                    android:scheme="T4J_OAuth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.CallBackActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/CallBackActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- <data android:scheme="oauth" android:host="callback"  /> -->
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.android.apis.viewtest.TwitterService"
+            android:enabled="@bool/atLeastIceCreamSandwich" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.example.android.apis.viewtest.RadioGroupTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/RadioGroupTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.BrowserTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/BroswerTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.LiveCameraActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/LiveCameraActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.WindowsManagerTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/WindowsManagerTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.ListViewTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/ListViewTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.RecyclerviewTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/RecyclerviewTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.InputPanelTestActivity"
+            android:configChanges="orientation|screenSize|fontScale"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/InputPanelTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.LayoutTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/LayoutTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.AllPartsTestActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/AllPartsTestActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+
+            <data
+                android:host="screen"
+                android:path="/wbattle/top"
+                android:scheme="abc" />
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.LinearLayoutInFrameActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/LinearLayoutInFrameActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.viewtest.HighligtKeyWordActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="View Test/HighligtKeyWordActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -1315,7 +1551,40 @@
             android:name="com.example.android.apis.animation.AnimationLoading"
             android:enabled="@bool/atLeastHoneycomb"
             android:hardwareAccelerated="false"
-            android:label="Animation/Loading" >
+            android:label="Animation/AnimationLoading" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.view.ListviewBtnAnimation"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:hardwareAccelerated="false"
+            android:label="Animation/ListviewBtnAnimation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.animation.AnimationStar"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:hardwareAccelerated="false"
+            android:label="Animation/AnimationStar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.animation.AnimationToMultiViewAtTheSameTime"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:hardwareAccelerated="false"
+            android:label="Animation/AnimationToMultiViewAtTheSameTime" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -1371,6 +1640,17 @@
             android:enabled="@bool/atLeastHoneycomb"
             android:hardwareAccelerated="false"
             android:label="Animation/Custom Evaluator" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.animation.CardMagic"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:hardwareAccelerated="false"
+            android:label="Animation/Card Magic" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -3231,6 +3511,24 @@
         <activity
             android:name="com.example.android.apis.text.Link"
             android:label="Text/Linkify" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.text.UnicodeTest"
+            android:label="Text/UnicodeTest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.text.UnicodeCommonTextTest"
+            android:label="Text/UnicodeCommonTextTest" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
