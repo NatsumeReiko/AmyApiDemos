@@ -3,6 +3,9 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/app/src/main/assets/fonts/srgb_20141216" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/assets/fonts/srgm_20141216" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/justjava/HashVsListTestDB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/justjava/MessageStatus.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/justjava/TalkMessageType.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/text/CommonTextView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/viewtest/AndroidBug5497Workaround.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/viewtest/PopupAnimation.java" charset="UTF-8" />

@@ -1044,16 +1044,17 @@
                 <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.android.apis.justjava.SearchGrep"
-            android:enabled="@bool/atLeastIceCreamSandwich"
-            android:label="justjava/SearchGrep" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <!-- <activity -->
+        <!-- android:name=".justjava.SearchGrep" -->
+        <!-- android:enabled="@bool/atLeastIceCreamSandwich" -->
+        <!-- android:label="justjava/SearchGrep" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-        </activity>
+
+        <!-- <category android:name="android.intent.category.SAMPLE_CODE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name="com.example.android.apis.viewtest.EditTestActivity"
             android:enabled="@bool/atLeastIceCreamSandwich"
@@ -1741,6 +1742,24 @@
         <activity
             android:name="com.example.android.apis.view.ChronometerDemo"
             android:label="Views/Chronometer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.justjava.HashMapVsListTest"
+            android:label="Java/HashMapVsListTest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.justjava.MemoryTest"
+            android:label="Java/MemoryTest" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

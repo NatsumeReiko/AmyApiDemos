@@ -1750,6 +1750,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".justjava.HashMapVsListTest"
+            android:label="Java/HashMapVsListTest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".justjava.MemoryTest"
+            android:label="Java/MemoryTest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.WebView1"
             android:label="Views/WebView" >
             <intent-filter>
