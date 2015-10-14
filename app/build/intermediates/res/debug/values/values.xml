@@ -1085,10 +1085,12 @@
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_update_received">ApiDemos has been updated!</string>
+    <string name="application_name">ExoPlayer Demo</string>
     <string name="apply">Apply</string>
     <string name="appwidget_configure_instructions">This text will be shown before the date in our example widget.</string>
     <string name="appwidget_prefix_default">Oh hai</string>
     <string name="appwidget_text_format"><ns1:g id="prefix">%1$s</ns1:g>: <ns1:g id="time">%2$s</ns1:g></string>
+    <string name="audio">Audio</string>
     <string name="autocomplete_1_country">Country:</string>
     <string name="autocomplete_1_focus">Give me Focus</string>
     <string name="autocomplete_1_instructions">Type in the text field for auto-completion.</string>
@@ -1232,10 +1234,14 @@
         Longpress on a dot to start a drag, then drop over another dot. The destination
         dot will append the drag\'s textual conversion to the EditText.
     </string>
+    <string name="drm_error_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="drm_error_unknown">An unknown DRM error occurred</string>
+    <string name="drm_error_unsupported_scheme">This device does not support the required DRM scheme</string>
     <string name="email_forward">Forward</string>
     <string name="email_reply">Reply</string>
     <string name="email_visibility">Email visibility</string>
     <string name="enable_admin">Enable admin</string>
+    <string name="enable_background_audio">Play in background</string>
     <string name="encryption_category">Encryption</string>
     <string name="encryption_not_supported">Encryption is not supported on this device.</string>
     <string name="encryption_not_supported_ok">OK</string>
@@ -1476,6 +1482,9 @@
     <string name="lock_wipe_category">Lock screen / Wipe</string>
     <string name="log_text_box_1_add_text">Add</string>
     <string name="log_text_box_1_do_nothing_text">Do nothing</string>
+    <string name="logging">Logging</string>
+    <string name="logging_normal">Normal</string>
+    <string name="logging_verbose">Verbose</string>
     <string name="long_click_for_context_menu">Long click for context menu</string>
     <string name="long_notification">Long notification.</string>
     <string name="long_notification_text">This is a long notification.  See, you might need a second more to read it.</string>
@@ -1524,6 +1533,7 @@
     <string name="notifying_service_controller">This service will update a status bar notification
                   every 5 seconds for a minute</string>
     <string name="number_format_warning">Bad value \"%1$s\""</string>
+    <string name="off">[off]</string>
     <string name="one_shot_alarm">One Shot Alarm</string>
     <string name="one_shot_received">The one-shot alarm has gone off</string>
     <string name="one_shot_scheduled">One-shot alarm will go off in 30 seconds based on
@@ -1647,6 +1657,7 @@
     <string name="resources_width_and_height_description">The layouts below use -wNNNdp and
         -hNNNdp to select between different versions based on the size of the screen.</string>
     <string name="restart">Restart</string>
+    <string name="retry">Retry</string>
     <!-- From: file:/D:/src/apidemo/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <string name="romance">#Romance</string>
@@ -1981,6 +1992,7 @@
     <string name="task_not_complete">is not complete</string>
     <string name="template_screen_off">Screen off. Volume %1$s percent.</string>
     <string name="template_screen_on">Screen on. Volume %1$s percent.</string>
+    <string name="text">Text</string>
     <string name="textColorPrimary">textColorPrimary</string>
     <string name="textColorSecondary">textColorSecondary</string>
     <string name="textColorTertiary">textColorTertiary</string>
@@ -2037,6 +2049,7 @@
     <string name="value_ringer_silent">Ringer silent</string>
     <string name="value_ringer_vibrate">Ringer vibrate</string>
     <string name="vibrate">Vibrate</string>
+    <string name="video">Video</string>
     <string name="violet">Violet</string>
     <string name="visibility_1_gone">Gone</string>
     <string name="visibility_1_invis">Invis</string>
@@ -2073,6 +2086,11 @@
         <item name="android:windowBackground">@color/custom_theme_color</item>
         <item name="android:colorBackground">@color/custom_theme_color</item>
     </style>
+    <style name="DemoButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
     <style name="ImageView120dpi">
         <item name="android:src">@drawable/stylogo120dpi</item>
         <item name="android:layout_width">wrap_content</item>
@@ -2087,6 +2105,12 @@
         <item name="android:src">@drawable/stylogo240dpi</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PlayerTheme" parent="@style/RootTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="RootTheme" parent="android:Theme.Holo">
     </style>
     <style name="TextAppearance.Theme.PlainText" parent="android:TextAppearance.Theme">
         <item name="android:textStyle">normal</item>

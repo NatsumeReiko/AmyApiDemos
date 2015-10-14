@@ -11,9 +11,14 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/android/apis/viewtest/PopupAnimation.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/animator/vertical_slide_in.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/animator/vertical_slide_out.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ng6_6_2_bg.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ng6_6_2_c.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ng6_6_3.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ngcommon_star_effect1.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ngcommon_star_effect2.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ngcommon_star_effect3.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/talk_room_image_progress.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/progress_bart_test.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/talk_room_header_part.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/view_notification_popup.xml" charset="UTF-8" />
   </component>

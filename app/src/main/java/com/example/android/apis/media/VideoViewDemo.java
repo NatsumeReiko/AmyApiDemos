@@ -38,7 +38,8 @@ public class VideoViewDemo extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.videoview);
         mVideoView = (VideoView) findViewById(R.id.surface_view);
-        path = "https://ia700401.us.archive.org/19/items/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
+//        path = "https://ia700401.us.archive.org/19/items/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
+        path = "https://platform-cdn.goalstart.jp/post-movie-native-2nd/7541/mp4_high_v2/7541.mp4";
 
         if (path == "") {
             // Tell the user to provide a media file URL/path.
@@ -57,6 +58,7 @@ public class VideoViewDemo extends Activity {
             mVideoView.setVideoPath(path);
             mVideoView.setMediaController(new MediaController(this));
             mVideoView.requestFocus();
+            mVideoView.start();
 
         }
     }

@@ -27,9 +27,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.Toast;
 
+import com.example.android.apis.ApiDemosApplication;
 import com.example.android.apis.R;
+
+import java.io.IOException;
 
 
 public class MediaPlayerDemo_Video extends Activity implements
@@ -53,14 +57,40 @@ public class MediaPlayerDemo_Video extends Activity implements
     private boolean mIsVideoSizeKnown = false;
     private boolean mIsVideoReadyToBePlayed = false;
 
+    private long starttime, endtime;
+
     /**
-     * 
      * Called when the activity is first created.
      */
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.mediaplayer_2);
+
+
+        findViewById(R.id.clean_cache).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mMediaPlayer.stop();
+
+                ApiDemosApplication.getInstance().clearApplicationData();
+            }
+        });
+
+        findViewById(R.id.restart).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    starttime = System.currentTimeMillis();
+                    Log.v(TAG, "setDataSource:" + starttime);
+
+                    mMediaPlayer.prepare();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
         mPreview = (SurfaceView) findViewById(R.id.surface);
         holder = mPreview.getHolder();
         holder.addCallback(this);
@@ -101,6 +131,9 @@ public class MediaPlayerDemo_Video extends Activity implements
                      * reasonably interleaved.
                      * 
                      */
+//                    path = "https://platform-cdn.goalstart.jp/post-movie-native-2nd/7541/mp4_high_v2/7541.mp4";
+                    path = "https://platform-cdn.goalstart.jp/post-movie-native-2nd/12900/mp4_high_v2/12900.mp4";
+
                     if (path == "") {
                         // Tell the user to provide a media file URL.
                         Toast
@@ -119,8 +152,11 @@ public class MediaPlayerDemo_Video extends Activity implements
 
             // Create a new media player and set the listeners
             mMediaPlayer = new MediaPlayer();
-            mMediaPlayer.setDataSource(path);
+            starttime = System.currentTimeMillis();
+            Log.v(TAG, "setDataSource:" + starttime);
+
             mMediaPlayer.setDisplay(holder);
+            mMediaPlayer.setDataSource(path);
             mMediaPlayer.prepare();
             mMediaPlayer.setOnBufferingUpdateListener(this);
             mMediaPlayer.setOnCompletionListener(this);
@@ -211,8 +247,11 @@ public class MediaPlayerDemo_Video extends Activity implements
     }
 
     private void startVideoPlayback() {
-        Log.v(TAG, "startVideoPlayback");
         holder.setFixedSize(mVideoWidth, mVideoHeight);
         mMediaPlayer.start();
+
+        endtime = System.currentTimeMillis();
+        Log.v(TAG, "startVideoPlayback:" + (endtime - starttime));
+
     }
 }

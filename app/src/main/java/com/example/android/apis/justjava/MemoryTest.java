@@ -51,6 +51,7 @@ public class MemoryTest extends Activity {
 
     private long startMemory, endMemory = 0;
     private ActivityManager am;
+    Runtime runtime;
 
 
     @Override
@@ -61,17 +62,16 @@ public class MemoryTest extends Activity {
         ((Button) findViewById(R.id.btn_02)).setText(HASHMAP_TAG);
         ((Button) findViewById(R.id.btn_03)).setText(LINK_HASHMAP_TAG);
 
-        Runtime rt;
-        rt = Runtime.getRuntime();
+        runtime = Runtime.getRuntime();
 //        am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
 //        startMemory = am.getMemoryClass();
-        Log.d("MemoryTest", "onCreate" + AVAILABLE_MEMORY + rt.maxMemory());
+        Log.d("MemoryTest", "onCreate" + AVAILABLE_MEMORY + runtime.maxMemory());
 
 
     }
 
     private void makeTestDt(int mode) {
-        startMemory = Runtime.getRuntime().maxMemory();
+        startMemory = runtime.maxMemory() - runtime.freeMemory();
 //        startMemory = am.getMemoryClass();
 
         HashVsListTestDB data;
@@ -107,7 +107,7 @@ public class MemoryTest extends Activity {
                 linkHashMap.put(data.messageId, data);
 
         }
-        endMemory = Runtime.getRuntime().maxMemory();
+        endMemory = runtime.maxMemory() - runtime.freeMemory();
 //        endMemory = am.getMemoryClass();
 
         if (mode == FROM_LIST)

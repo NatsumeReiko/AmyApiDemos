@@ -2516,6 +2516,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.android.apis.view.ProgressBarTest"
+            android:label="Views/ProgressBarTest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.android.apis.view.Animation2"
             android:label="Views/Animation/Push" >
             <intent-filter>
@@ -3462,6 +3471,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.android.apis.media.exoplayer.PlayerActivity"
+            android:label="Media/PlayerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.media.exoplayer.SampleChooserActivity"
+            android:label="Media/SampleChooserActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.android.apis.media.MediaPlayerDemo_Audio"
             android:label="Media/MediaPlayer" >
             <intent-filter>
@@ -3478,6 +3505,15 @@
         <activity
             android:name="com.example.android.apis.media.VideoViewDemo"
             android:label="Media/VideoView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.apis.media.VideoPlayerSufaceView"
+            android:label="Media/VideoPlayerSufaceView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
