@@ -3503,6 +3503,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.android.apis.media.ExoPlayerDemo"
+            android:label="Media/ExoPlayerDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.android.apis.media.VideoViewDemo"
             android:label="Media/VideoView" >
             <intent-filter>

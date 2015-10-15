@@ -34,7 +34,7 @@ public class VideoPlayerSufaceView extends Activity implements SurfaceHolder.Cal
     private SurfaceHolder vidHolder;
     private SurfaceView vidSurface;
     String vidAddress = "https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
-    String vidAddress1 = "https://platform-cdn.goalstart.jp/post-movie-native-2nd/7541/mp4_high_v2/7541.mp4";
+    String vidAddress1 = "http://html5demos.com/assets/dizzy.mp4";
 
     @Override
     public void onCreate(Bundle icicle) {

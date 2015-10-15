@@ -33,7 +33,7 @@ import com.google.android.exoplayer.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer.upstream.DefaultUriDataSource;
 
 /**
- * A {@link RendererBuilder} for streams that can be read using an {@link Extractor}.
+ * A {@link } for streams that can be read using an {@link Extractor}.
  */
 public class ExtractorRendererBuilder implements DemoPlayer.RendererBuilder {
 

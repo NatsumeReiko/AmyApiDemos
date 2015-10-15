@@ -38,8 +38,8 @@ public class HashVsListTestDB {
 
     public long sentTimestamp = -1;
 
-    public TalkMessageType getType() {
-        return TalkMessageType.toEnum(type);
+    public MyMessageType getType() {
+        return MyMessageType.toEnum(type);
     }
 
     public MessageStatus getStatus() {

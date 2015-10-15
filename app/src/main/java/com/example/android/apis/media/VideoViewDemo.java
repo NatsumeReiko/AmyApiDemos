@@ -39,7 +39,7 @@ public class VideoViewDemo extends Activity {
         setContentView(R.layout.videoview);
         mVideoView = (VideoView) findViewById(R.id.surface_view);
 //        path = "https://ia700401.us.archive.org/19/items/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4";
-        path = "https://platform-cdn.goalstart.jp/post-movie-native-2nd/7541/mp4_high_v2/7541.mp4";
+        path = "http://html5demos.com/assets/dizzy.mp4";
 
         if (path == "") {
             // Tell the user to provide a media file URL/path.
