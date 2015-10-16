@@ -20,33 +20,10 @@
     android:focusable="true"
     android:keepScreenOn="true">
 
-    <com.google.android.exoplayer.AspectRatioFrameLayout
-        android:id="@+id/video_frame"
+    <ListView
+        android:id="@+id/video_demo_list"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        tools:background="#ff000f">
-
-        <SurfaceView
-            android:id="@+id/surface_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center" />
-
-        <!--<View-->
-            <!--android:id="@+id/shutter"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:background="@android:color/black"-->
-            <!--tools:background="#ff000f"-->
-            <!--tools:visibility="gone" />-->
-
-        <!--<com.google.android.exoplayer.text.SubtitleLayout-->
-        <!--android:id="@+id/subtitles"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
-
-    </com.google.android.exoplayer.AspectRatioFrameLayout>
+        android:layout_height="match_parent" />
 
     <!--<LinearLayout-->
     <!--android:layout_width="match_parent"-->

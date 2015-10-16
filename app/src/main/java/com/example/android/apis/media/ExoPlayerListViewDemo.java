@@ -17,20 +17,21 @@
 package com.example.android.apis.media;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaCodec;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
+import android.view.LayoutInflater;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnKeyListener;
-import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.android.apis.R;
 import com.example.android.apis.media.exoplayer.EventLogger;
@@ -58,7 +59,7 @@ import java.net.CookiePolicy;
 /**
  * An activity that plays media using {@link ExoPlayer}.
  */
-public class ExoPlayerDemo extends Activity implements SurfaceHolder.Callback, OnClickListener,MediaCodecVideoTrackRenderer.EventListener,
+public class ExoPlayerListViewDemo extends Activity implements SurfaceHolder.Callback, OnClickListener, MediaCodecVideoTrackRenderer.EventListener,
         AudioCapabilitiesReceiver.Listener {
     private static final int BUFFER_SEGMENT_SIZE = 64 * 1024;
     private static final int VIDEO_BUFFER_SEGMENTS = 200;
@@ -116,38 +117,17 @@ public class ExoPlayerDemo extends Activity implements SurfaceHolder.Callback, O
         contentType = intent.getIntExtra(CONTENT_TYPE_EXTRA, -1);
         contentId = intent.getStringExtra(CONTENT_ID_EXTRA);
 
-        setContentView(R.layout.exoplayer_recycler_view_row);
+        setContentView(R.layout.exoplayer_list_demo);
+
+        String[] values = new String[]{"Android", "iPhone", "WindowsMobile",
+                "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
+                "Linux", "OS/2"};
+
+        ListView myListView = (ListView) findViewById(R.id.video_demo_list);
+        MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, values);
+        myListView.setAdapter(adapter);
+
         mainHandler = new Handler();
-
-        View root = findViewById(R.id.root);
-        root.setOnTouchListener(new OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    view.performClick();
-                }
-                return true;
-            }
-        });
-        root.setOnKeyListener(new OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_MENU) {
-                    return false;
-                }
-                return true;
-            }
-        });
-
-//        shutterView = findViewById(R.id.shutter);
-//        debugRootView = findViewById(R.id.controls_root);
-
-        videoFrame = (AspectRatioFrameLayout) findViewById(R.id.video_frame);
-        surfaceView = (SurfaceView) findViewById(R.id.surface_view);
-        surfaceView.getHolder().addCallback(this);
-//        subtitleLayout = (SubtitleLayout) findViewById(R.id.subtitles);
-
 
         CookieHandler currentHandler = CookieHandler.getDefault();
         if (currentHandler != defaultCookieManager) {
@@ -162,7 +142,7 @@ public class ExoPlayerDemo extends Activity implements SurfaceHolder.Callback, O
     public void onResume() {
         super.onResume();
         if (player == null) {
-            preparePlayer03(true);
+//            preparePlayer03(true);
         } else {
 //            player.setBackgrounded(false);
         }
@@ -172,7 +152,7 @@ public class ExoPlayerDemo extends Activity implements SurfaceHolder.Callback, O
     public void onPause() {
         super.onPause();
         if (!enableBackgroundAudio) {
-            releasePlayer();
+//            releasePlayer();
         } else {
 //            player.setBackgrounded(true);
         }
@@ -253,7 +233,7 @@ public class ExoPlayerDemo extends Activity implements SurfaceHolder.Callback, O
         player.addListener(new ExoPlayer.Listener() {
             @Override
             public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
-                switch(playbackState) {
+                switch (playbackState) {
                     case ExoPlayer.STATE_BUFFERING:
                         break;
                     case ExoPlayer.STATE_ENDED:
@@ -351,5 +331,98 @@ public class ExoPlayerDemo extends Activity implements SurfaceHolder.Callback, O
     @Override
     public void onDrawnToSurface(Surface surface) {
 
+    }
+
+    public class MySimpleArrayAdapter extends ArrayAdapter<String> {
+        private final Context context;
+        private final String[] values;
+
+        public MySimpleArrayAdapter(Context context, String[] values) {
+            super(context, R.layout.exoplayer_recycler_view_row, values);
+            this.context = context;
+            this.values = values;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            LayoutInflater inflater = (LayoutInflater) context
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View rowView = inflater.inflate(R.layout.exoplayer_recycler_view_row, parent, false);
+            SurfaceView surfaceView = (SurfaceView) rowView.findViewById(R.id.surface_view);
+
+            Uri uri = Uri.parse("http://html5demos.com/assets/dizzy.mp4");
+            final int numRenderers = 2;
+            final ExoPlayer player = ExoPlayer.Factory.newInstance(numRenderers);
+            surfaceView.getHolder().addCallback(new SurfaceHolder.Callback() {
+                @Override
+                public void surfaceCreated(SurfaceHolder holder) {
+
+                }
+
+                @Override
+                public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+
+                }
+
+                @Override
+                public void surfaceDestroyed(SurfaceHolder holder) {
+                    player.release();
+
+                }
+            });
+
+            Allocator allocator = new DefaultAllocator(BUFFER_SEGMENT_SIZE);
+            DefaultBandwidthMeter bandwidthMeter = new DefaultBandwidthMeter(mainHandler,
+                    null);
+            DataSource dataSource = new DefaultUriDataSource(getContext(), bandwidthMeter, Util.getUserAgent(getContext(), "ExoPlayerDemo"));
+            // Build the sample source
+            ExtractorSampleSource sampleSource = new ExtractorSampleSource(uri, dataSource, allocator, 10 * BUFFER_SEGMENT_SIZE);
+
+            // Build the track renderers
+            MediaCodecVideoTrackRenderer videoRenderer = new MediaCodecVideoTrackRenderer(sampleSource, MediaCodec.VIDEO_SCALING_MODE_SCALE_TO_FIT);
+            MediaCodecAudioTrackRenderer audioRenderer = new MediaCodecAudioTrackRenderer(sampleSource);
+
+            // Build the ExoPlayer and start playback
+            player.prepare(videoRenderer, audioRenderer);
+
+            player.addListener(new ExoPlayer.Listener() {
+                @Override
+                public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
+                    switch (playbackState) {
+                        case ExoPlayer.STATE_BUFFERING:
+                            break;
+                        case ExoPlayer.STATE_ENDED:
+                            player.seekTo(0);
+                            break;
+                        case ExoPlayer.STATE_IDLE:
+                            break;
+                        case ExoPlayer.STATE_PREPARING:
+                            break;
+                        case ExoPlayer.STATE_READY:
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                @Override
+                public void onPlayWhenReadyCommitted() {
+
+                }
+
+                @Override
+                public void onPlayerError(ExoPlaybackException error) {
+
+                }
+            });
+
+            // Pass the surface to the video renderer.
+            player.sendMessage(videoRenderer, MediaCodecVideoTrackRenderer.MSG_SET_SURFACE, surfaceView.getHolder().getSurface());
+
+            player.setPlayWhenReady(true);
+
+
+            return rowView;
+        }
     }
 }

@@ -3512,6 +3512,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".media.ExoPlayerListViewDemo"
+            android:label="Media/ExoPlayerListViewDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".media.exoplayer_in_recyclerview.ExoPlayerRecyclerViewDemo"
+            android:label="Media/ExoPlayerRecyclerViewDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".media.VideoViewDemo"
             android:label="Media/VideoView" >
             <intent-filter>
