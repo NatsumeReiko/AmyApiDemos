@@ -1,0 +1,22 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/modules.xml
+/app/app.iml
+gs_native_android.iml
+GSNative.iml
+/gs_native_android.iml
+/GSNative.iml
+/build
+/app.iml
+.gitignore
+
+.DS_Store
+
+# Crashlytics
+app/src/main/res/values/com_crashlytics_export_strings.xml
+app/src/main/assets/crashlytics-build.properties
+
+/app/src/main/res/drawable-v1/
+runConfigurations.xml
